@@ -1,0 +1,10 @@
+Primer commit:
+
+Se realizo todo en la terminal PowerShell sin necesidad de IA y la creación
+de archivos como .gitignore y IA.txt se crearon en code . o en la evaluación Formativa U2 dentro de VSC.
+
+Y se subio el commit con el Sistema admin instalado: proyecto creado,
+app registrada, admin accesible, superusuario admin.
+
+
+
