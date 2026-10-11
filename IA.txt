@@ -7,4 +7,13 @@ Y se subio el commit con el Sistema admin instalado: proyecto creado,
 app registrada, admin accesible, superusuario admin.
 
 
+Segundo Commit:
+
+Se realizo en VSC la creación de los modelos y registro en admin en la app de shop,
+posteriormente en la terminal de PowerShell se realizaron las migraciones para actualizar
+la base de datos y se verifico el funcionamiento del servidor (runserver) dentro de la administración de Django.
+
+En lo cual se subieron como:
+Modelos creados: modelos, relación, migraciones y registro en el admin.
+
 
