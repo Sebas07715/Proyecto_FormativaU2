@@ -10,7 +10,8 @@ class Cliente(models.Model):
     saldo = models.IntegerField()
 
     def __str__(self):
-        return f"{self.nombre} - {self.direccion}"
+        return f"{self.nombre}"
+
     
 class Producto(models.Model):
     cliente = models.ForeignKey(Cliente, on_delete=models.CASCADE)
@@ -21,3 +22,5 @@ class Producto(models.Model):
 
     def __str__(self):
         return f"{self.articulo} - ${self.precio} ({self.fecha})"
+
+    

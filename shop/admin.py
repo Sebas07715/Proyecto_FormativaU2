@@ -5,14 +5,21 @@ from shop.models import Cliente, Producto
 
 @admin.register(Cliente)
 class ClienteAdmin(admin.ModelAdmin):
-    list_display = ('nombre', 'rut', 'email', 'direccion', 'saldo')
-    list_filter = ('nombre', 'rut', 'email')
-    search_fields = ('nombre', 'rut', 'email')
+    list_display = ('id','nombre', 'rut', 'email', 'direccion', 'Saldo_Cliente')
+    list_filter = ('id',)
+    search_fields = ('id','nombre', 'rut', 'email')
 
+    def Saldo_Cliente (self, obj):
+
+        return f"${obj.saldo:,}".replace(",", ".")
 
 @admin.register(Producto)
 class ProductoAdmin(admin.ModelAdmin):
-    list_display = ('articulo', 'precio', 'stock', 'fecha', 'cliente')
-    list_filter = ('articulo', 'precio', 'cliente')
-    search_fields = ('articulo', 'precio')
+    list_display = ('id','articulo', 'Total', 'stock', 'fecha', 'cliente')
+    list_filter = ('id', 'fecha','stock')
+    search_fields = ('id','articulo', 'precio',)
 
+
+    def Total (self, obj):
+
+        return f"${obj.precio:,}".replace(",", ".")

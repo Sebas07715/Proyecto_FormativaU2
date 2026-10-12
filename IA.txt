@@ -16,4 +16,12 @@ la base de datos y se verifico el funcionamiento del servidor (runserver) dentro
 En lo cual se subieron como:
 Modelos creados: modelos, relación, migraciones y registro en el admin.
 
+Tercer Commit:
+
+Se añadio el formato a Pesos Chilenos en la app shop (archivo admin) y su visualización en la clase, se verifico
+que al crear Cliente y Producto, se crearan con su formato de $12.900, se crearon los grupos y usuarios asignandose.
+
+En lo cual se subieron como:
+Usuarios creados: grupos, usuarios editor y consulta , montos formateados y
+registros cargados
 
